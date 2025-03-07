@@ -34,7 +34,7 @@
     <nav role="navigation">
       <!-- el atributo role se utiliza para clarificar la función de dicho elemento en la interfaz. En este caso se está utilizando la etiqueta nav que tiene su significado semántico en HTML por lo que no haría falta el atributo role, pero role es necesario por ejemplo en div u otros elementos que carecen de significado per se ya que son elementos genéricos -->
 
-      <ul>
+      <ul style="font-size: 24px">
         <!-- el atributo aria-label ofrece un texto alternativo que facilita la comprensión del elemento por parte del usuario que utiliza lector de texto, haciendo la web más accesible -->
 
         <li>
@@ -103,13 +103,14 @@
       <b>biodiversidad</b> en estos espacios naturales para fortalecer nuestra
       conexión con la naturaleza en la vida cotidiana.
     </p>
-    <video controls width="560" height="315">
+    <video controls preload="metadata" width="560" height="315">
       <source src="Media/parque.mp4" type="video/mp4" />
       <track
         src="Media/subtitulo.vtt"
         kind="subtitles"
-        srclang="es"
-        label="Español"
+        srclang="en"
+        label="English"
+        default
       />
       Tu navegador no soporta la etiqueta <code>video</code>.
       <!-- 
@@ -254,7 +255,7 @@
     <div>
       <h2 id="enlace5"><u>Enlaces de interés</u></h2>
       <!-- Los siguientes enlaces permiten acceder al URL de una página externa abriendo una pestaña nueva gracias al atributo target="_blank". Esto permite que el usuario acceda dicha información sin abandonar nuestra web-->
-      <ul>
+      <ul style="font-size: 24px">
         <li>
           <a
             href="https://www.spain.info/es/top/parques-jardines-urbanos-principales-ciudades-espana/"
