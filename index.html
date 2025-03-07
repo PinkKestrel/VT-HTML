@@ -35,46 +35,61 @@
       <!-- el atributo role se utiliza para clarificar la función de dicho elemento en la interfaz. En este caso se está utilizando la etiqueta nav que tiene su significado semántico en HTML por lo que no haría falta el atributo role, pero role es necesario por ejemplo en div u otros elementos que carecen de significado per se ya que son elementos genéricos -->
 
       <ul>
-        <a
-          href="#enlace1"
-          target="_self"
-          aria-label="Ir a la sección la biodiversidad de nuestros parques"
-        >
-          <!-- el atributo aria-label ofrece un texto alternativo que facilita la comprensión del elemento por parte del usuario que utiliza lector de texto, haciendo la web más accesible -->
+        <!-- el atributo aria-label ofrece un texto alternativo que facilita la comprensión del elemento por parte del usuario que utiliza lector de texto, haciendo la web más accesible -->
 
-          <li>La biodiversidad de nuestros parques</li></a
-        >
-        <ul>
+        <li>
           <a
-            href="#enlace2"
+            href="#enlace1"
             target="_self"
-            aria-label="Ir a la sección elementos naturales en un parque"
-            ><li>Elementos naturales en un parque</li></a
+            aria-label="Ir a la sección la biodiversidad de nuestros parques"
+            >La biodiversidad de nuestros parques</a
           >
-          <ul>
+        </li>
+        <ul>
+          <li>
             <a
-              href="#enlace3"
+              href="#enlace2"
               target="_self"
-              aria-label="Ir a la sección árboles, arbustos y vegetación"
-              ><li>Árboles, arbustos y vegetación</li></a
+              aria-label="Ir a la sección elementos naturales en un parque"
+              >Elementos naturales en un parque</a
             >
-            <a href="#enlace4" target="_self" aria-label="Ir a la sección fauna"
-              ><li>Fauna</li></a
-            >
+          </li>
+
+          <ul>
+            <li>
+              <a
+                href="#enlace3"
+                target="_self"
+                aria-label="Ir a la sección árboles, arbustos y vegetación"
+                >Árboles, arbustos y vegetación</a
+              >
+            </li>
+            <li>
+              <a
+                href="#enlace4"
+                target="_self"
+                aria-label="Ir a la sección fauna"
+                >Fauna</a
+              >
+            </li>
           </ul>
         </ul>
-        <a
-          href="#enlace5"
-          target="_self"
-          aria-label="Ir a la sección enlaces de interés"
-          ><li>Enlaces de interés</li></a
-        >
-        <a
-          href="#enlace6"
-          target="_self"
-          aria-label="Ir a la sección ejemplo de parque urbano"
-          ><li>Ejemplo de parque urbano</li></a
-        >
+        <li>
+          <a
+            href="#enlace5"
+            target="_self"
+            aria-label="Ir a la sección enlaces de interés"
+            >Enlaces de interés</a
+          >
+        </li>
+        <li>
+          <a
+            href="#enlace6"
+            target="_self"
+            aria-label="Ir a la sección ejemplo de parque urbano"
+            >Ejemplo de parque urbano</a
+          >
+        </li>
       </ul>
     </nav>
     <h1 id="enlace1">La biodiversidad de nuestros parques</h1>
@@ -230,24 +245,26 @@
       <h2 id="enlace5"><u>Enlaces de interés</u></h2>
       <!-- Los siguientes enlaces permiten acceder al URL de una página externa abriendo una pestaña nueva gracias al atributo target="_blank". Esto permite que el usuario acceda dicha información sin abandonar nuestra web-->
       <ul>
-        <a
-          href="https://www.spain.info/es/top/parques-jardines-urbanos-principales-ciudades-espana/"
-          target="_blank"
-          aria-label="Ir a la página oficial de turismo de España: Parques y jardines urbanos de las principales ciudades de España"
-          ><li>
+        <li>
+          <a
+            href="https://www.spain.info/es/top/parques-jardines-urbanos-principales-ciudades-espana/"
+            target="_blank"
+            aria-label="Ir a la página oficial de turismo de España: Parques y jardines urbanos de las principales ciudades de España"
+          >
             Listado de parques y jardines urbanos de las principales cuidades de
             España
-          </li></a
-        >
-        <a
-          href="https://mooevo.com/shop/desarrollo-sostenible/importancia-del-mantenimiento-de-parques-y-zonas-verdes-en-las-ciudades/"
-          target="_blank"
-          aria-label="Ir a la web mooevo: importancia del mantenimiento de parques y zonas verdes en las ciudades"
-          ><li>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://mooevo.com/shop/desarrollo-sostenible/importancia-del-mantenimiento-de-parques-y-zonas-verdes-en-las-ciudades/"
+            target="_blank"
+            aria-label="Ir a la web mooevo: importancia del mantenimiento de parques y zonas verdes en las ciudades"
+          >
             Importancia del mantenimiento de parques y zonas verdes en las
             cuidades
-          </li></a
-        >
+          </a>
+        </li>
         <li>
           <a
             href="https://es.wikipedia.org/wiki/Categor%C3%ADa:Parques_urbanos_de_Espa%C3%B1a"
