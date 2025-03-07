@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Se utiliza para definir metadatos, el título de la página y enlaces a otros recursos como CSS o JavaScript -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actividad 3</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Contiene el contenido visible de la página, como textos, imágenes y enlaces -->
+    <div>
+      <center>
+        <a href="#enlace-imagen" aria-describedby="enlace-plano-parque">
+          <!-- el atributo aria-describedby vincula dicho elemento al id de otro elemento que describe la función de este este primero, para facilitar la comprensión del usuario -->
+
+          <img
+            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/6a/30/c5/fabulosa-arquitectura.jpg?w=900&h=500&s=1"
+            alt="Fotografía del Parque de María Luisa de Sevilla, donde se ve el
+        Museo de Artes y Costumbres Populares de Sevilla"
+        /></a>
+        <p
+          id="enlace-plano-parque"
+          style="font-weight: lighter; font-style: italic"
+        >
+          *Clica en la imagen para ver el plano del Parque de María Luisa
+        </p>
+      </center>
+      <!-- El atributo requerido altespecifica un texto alternativo para una imagen, si esta no se puede mostrar.
+      El altatributo proporciona información alternativa para una imagen si un usuario por algún motivo no puede verla 
+      (debido a una conexión lenta, un error en el srcatributo o si el usuario usa un lector de pantalla). -->
+    </div>
+    <h1>Índice</h1>
+    <nav role="navigation">
+      <!-- el atributo role se utiliza para clarificar la función de dicho elemento en la interfaz. En este caso se está utilizando la etiqueta nav que tiene su significado semántico en HTML por lo que no haría falta el atributo role, pero role es necesario por ejemplo en div u otros elementos que carecen de significado per se ya que son elementos genéricos -->
+
+      <ul>
+        <a
+          href="#enlace1"
+          target="_self"
+          aria-label="Ir a la sección la biodiversidad de nuestros parques"
+        >
+          <!-- el atributo aria-label ofrece un texto alternativo que facilita la comprensión del elemento por parte del usuario que utiliza lector de texto, haciendo la web más accesible -->
+
+          <li>La biodiversidad de nuestros parques</li></a
+        >
+        <ul>
+          <a
+            href="#enlace2"
+            target="_self"
+            aria-label="Ir a la sección elementos naturales en un parque"
+            ><li>Elementos naturales en un parque</li></a
+          >
+          <ul>
+            <a
+              href="#enlace3"
+              target="_self"
+              aria-label="Ir a la sección árboles, arbustos y vegetación"
+              ><li>Árboles, arbustos y vegetación</li></a
+            >
+            <a href="#enlace4" target="_self" aria-label="Ir a la sección fauna"
+              ><li>Fauna</li></a
+            >
+          </ul>
+        </ul>
+        <a
+          href="#enlace5"
+          target="_self"
+          aria-label="Ir a la sección enlaces de interés"
+          ><li>Enlaces de interés</li></a
+        >
+        <a
+          href="#enlace6"
+          target="_self"
+          aria-label="Ir a la sección ejemplo de parque urbano"
+          ><li>Ejemplo de parque urbano</li></a
+        >
+      </ul>
+    </nav>
+    <h1 id="enlace1">La biodiversidad de nuestros parques</h1>
+    <p>
+      Los <b>parques urbanos</b> son vitales para conservar la biodiversidad en
+      las ciudades. Estos espacios albergan una gran variedad de especies de
+      flora y fauna, que no solo enriquecen el entorno, sino que también mejoran
+      la calidad del aire y el bienestar de los habitantes. Los parques actúan
+      como refugios para muchas especies y ayudan a regular el clima urbano.
+      Esta web destaca la importancia de preservar y promover la
+      <b>biodiversidad</b> en estos espacios naturales para fortalecer nuestra
+      conexión con la naturaleza en la vida cotidiana.
+    </p>
+    <video controls width="560" height="315">
+      <source src="Media/parque.mp4" type="video/mp4" />
+      <track
+        src="Media/subtitulo.vtt"
+        kind="subtitles"
+        srclang="es"
+        label="Español"
+      />
+      Tu navegador no soporta la etiqueta <code>video</code>.
+      <!-- 
+            Los subtítulos permiten que las personas con dificultades auditivas puedan entender el contenido audiovisual.
+            Además, los subtítulos pueden ser útiles para usuarios en ambientes ruidosos o para aquellos que prefieren no usar audio.
+        -->
+    </video>
+    <h2 id="enlace2"><u>Elementos naturales en un parque</u></h2>
+    <p>
+      Algunos de los <i>elementos naturales</i> que contribuyen a la
+      biodiversidad y al equilibrio ecológico de los parques urbanos son los
+      siguientes:
+    </p>
+    <ul>
+      <!-- <ul> se usa para crear una lista no ordenada, donde los elementos no tienen un orden específico -->
+      <li>
+        <u>Árboles:</u> Diversas especies que proporcionan sombra, oxígeno y
+        hábitats para fauna
+      </li>
+      <li>
+        <u>Flores y plantas:</u> Desde plantas nativas hasta especies
+        ornamentales que enriquecen el ecosistema.
+      </li>
+      <li>
+        <u>Aves:</u> Diferentes especies de aves que anidan o pasan por los
+        parques durante sus migraciones.
+        <div><audio src="Media/sonidos_aves.mp3" controls></audio></div>
+        <!-- Los archivos de audio enriquecen la experiencia del usuario al añadir elementos sensoriales como música o efectos de sonido. 
+            Esto aumenta la inmersión, haciendo que la interacción sea más atractiva y envolvente-->
+      </li>
+      <li>
+        <u>Insectos:</u> Mariposas, abejas y otros insectos que juegan un papel
+        clave en la polinización.
+      </li>
+      <li>
+        <u>Agua:</u> Estanques, riachuelos o fuentes que no solo decoran, sino
+        que también ofrecen hábitats para vida acuática.
+      </li>
+    </ul>
+    <h3 id="enlace3">Árboles, arbustos y vegetación</h3>
+    <p>
+      A continuación os mostramos una lista de algunas de las especies de
+      árboles, arbustos y vegetación que podemos encontrar en los parques de las
+      ciudades españolas:
+    </p>
+    <ol>
+      <!-- <ol> se usa para crear una lista ordenada, donde los elementos tienen un orden numérico o alfabético, lo que indica una secuencia o prioridad -->
+
+      <li>
+        <u>Acebuche:</u> El acebuche es el antecesor del olivo cultivado y es
+        común en parques de áreas mediterráneas. Es resistente a la sequía y
+        proporciona un hábitat esencial para diversas especies.
+      </li>
+      <li>
+        <u>Encina:</u> Esta especie es clave en la vegetación mediterránea. Es
+        muy resistente a la sequía y al calor, lo que la hace esencial en
+        parques de zonas más cálidas.
+      </li>
+      <li id="lavanda-descripcion">
+        <u>Lavanda:</u> Este arbusto es muy popular por sus flores de color
+        violeta y su fragancia. Además, es resistente a la sequía y atrae abejas
+        y mariposas, promoviendo la biodiversidad.
+      </li>
+      <li>
+        <u>Pino:</u> Común en muchas zonas urbanas, especialmente en el norte y
+        sur de España, el pino ayuda a la conservación del medio ambiente al
+        proporcionar oxígeno y servir de refugio para la fauna.
+      </li>
+      <li>
+        <u>Plátano de sombra: </u>Es uno de los árboles más importantes en los
+        parques urbanos debido a su tamaño, capacidad para proporcionar sombra y
+        resistencia a la contaminación. Común en muchas ciudades españolas.
+      </li>
+      <li>
+        <u>Romero:</u> Arbusto aromático muy común en parques, especialmente en
+        las áreas del sur de España. Aporta biodiversidad, atrae insectos
+        polinizadores y se utiliza en jardinería ornamental.
+      </li>
+    </ol>
+    <img
+      src="Media/imagen1.jpg"
+      alt="Imagen planta de lavanda"
+      id="lavanda"
+      width="358"
+      height="226"
+      aria-describedby="lavanda-descripcion"
+    />
+    <!-- Mediante el uso de CSS, se puede mejorar la visibilidad de las imágenes en la página, ya sea ajustando el tamaño, o alineando la imagen, alterando los márgenes y bordes, añadiento efectos, etc -->
+    <h3 id="enlace4">Fauna</h3>
+    <p>
+      Los parques urbanos albergan una sorprendente variedad de fauna. Estos
+      espacios naturales no solo ofrecen refugio a muchas especies, sino que
+      también contribuyen al equilibrio ecológico de las ciudades. A
+      continuación, os mostramos algunas de las especies más comunes que habitan
+      en estos parques:
+    </p>
+    <ul>
+      <li><u>Aves:</u></li>
+      <ul>
+        <li>Gorriones</li>
+        <img
+          src="Media/imagen2.jpg"
+          alt="Fotografía de un gorrión"
+          id="gorrion"
+          width="358"
+          height="226"
+        />
+        <li>Mirlo común</li>
+        <li>Palomas</li>
+        <li>Jilgueros</li>
+        <li>Herrerillos</li>
+      </ul>
+      <li><u>Insectos:</u></li>
+      <ul>
+        <li>Abejas</li>
+        <img
+          src="Media/imagen3.jpg"
+          alt="Fotografía abejas"
+          id="abejas"
+          width="358"
+          height="226"
+        />
+        <li>Mariposas</li>
+        <li>Libélulas</li>
+        <li>Escarabajos</li>
+        <li>Mariquitas</li>
+      </ul>
+      <li><u>Reptiles</u></li>
+      <li><u>Mamíferos</u></li>
+      <li><u>Anfibios</u></li>
+    </ul>
+    <div>
+      <h2 id="enlace5"><u>Enlaces de interés</u></h2>
+      <!-- Los siguientes enlaces permiten acceder al URL de una página externa abriendo una pestaña nueva gracias al atributo target="_blank". Esto permite que el usuario acceda dicha información sin abandonar nuestra web-->
+      <ul>
+        <a
+          href="https://www.spain.info/es/top/parques-jardines-urbanos-principales-ciudades-espana/"
+          target="_blank"
+          aria-label="Ir a la página oficial de turismo de España: Parques y jardines urbanos de las principales ciudades de España"
+          ><li>
+            Listado de parques y jardines urbanos de las principales cuidades de
+            España
+          </li></a
+        >
+        <a
+          href="https://mooevo.com/shop/desarrollo-sostenible/importancia-del-mantenimiento-de-parques-y-zonas-verdes-en-las-ciudades/"
+          target="_blank"
+          aria-label="Ir a la web mooevo: importancia del mantenimiento de parques y zonas verdes en las ciudades"
+          ><li>
+            Importancia del mantenimiento de parques y zonas verdes en las
+            cuidades
+          </li></a
+        >
+        <li>
+          <a
+            href="https://es.wikipedia.org/wiki/Categor%C3%ADa:Parques_urbanos_de_Espa%C3%B1a"
+            target="_blank"
+            aria-label="Ir a Wikipedia: listado de parques urbanos de España"
+            >Wikipedia:</a
+          ><span> Parques urbanos de España</span>
+        </li>
+      </ul>
+
+      <h2 id="enlace6">
+        <u> Ejemplo de parque urbano: El Parque de María Luisa (Sevilla) </u>
+      </h2>
+      <p>
+        El parque de María Luisa es el primer parque urbano de Sevilla
+        (Andalucía, España) y uno de sus pulmones verdes. En 1983 fue declarado
+        Bien de Interés Cultural en la categoría de Jardín Histórico. Se
+        inauguró el 18 de abril de 1914 como parque urbano Infanta María Luisa
+        Fernanda. Estos espacios, que en principio formaban parte de los
+        jardines privados del palacio de San Telmo, fueron donados en 1893 por
+        la infanta María Luisa Fernanda de Borbón, esposa del duque de
+        Montpensier, a la ciudad. Las plazas de España y de América, construidas
+        para la Exposición Iberoamericana de 1929, están integradas en el parque
+        como en un jardín público y constituyen uno de los principales
+        atractivos.
+      </p>
+      <center>
+        <img
+          src="https://www.visitarsevilla.com/wp-content/uploads/2020/05/plano-maria-luisa.jpg"
+          alt="Plano del Parque de María Luisa"
+          id="enlace-imagen"
+          usemap="#mapa_parque"
+          width="900px"
+          height="500px"
+          aria-describedby="enlaces-sobre-plano"
+        />
+        <p
+          id="enlaces-sobre-plano"
+          style="font-weight: lighter; font-style: italic"
+        >
+          *Explore con la ayuda del cursor el plano del Parque de María Luisa
+          para descubrir los enlaces externos a puntos de interés de dicho
+          parque
+        </p>
+        <map name="mapa_parque">
+          <area
+            shape="circle"
+            coords="260, 230, 80"
+            href="https://www.andalucia.org/listing/plaza-de-espa%c3%b1a/16337102/"
+            target="_blank"
+            alt="Plaza de España"
+            aria-label="Página de turismo de Andalucía: Plaza de España"
+          />
+          <!-- Este área, de mayor diámetro, señala una de las zonas más amplias y emblemáticas del parque, y haciendo clic en dicha área se puede acceder a un enlace externo donde encontrarán información de interés sobre la plaza localizada en ese area -->
+          <area
+            shape="circle"
+            coords="750, 350, 40"
+            href="https://www.museosdeandalucia.es/web/museoarqueologicodesevilla"
+            target="_blank"
+            alt="Museo Arqueológico de Sevilla"
+            aria-label="Página de museos de Andalucía: Museo de Arqueología de Sevilla"
+          />
+          <area
+            shape="circle"
+            coords="430, 350, 40"
+            href="https://www.sevilla.org/servicios/medio-ambiente-parques-jardines/parques/parques-y-jardines-historicos/parque-de-maria-luisa/isleta-de-los-patos/isleta-de-los-patos"
+            target="_blank"
+            alt="Isleta de los Patos"
+            aria-label="Página de turismo de Sevilla: Isletas de los Patos del Parque de María Luisa"
+          />
+          <!-- Estas dos últimas áreas señalan a una zona más localizada del mapa y permite acceder clicando sobre dicha zona a un enlace externo que amplía infoprmación acerca de esa localización -->
+        </map>
+      </center>
+    </div>
+    <footer>
+      <!-- Normalmente se usa para contenido al final de la página, como información de derechos de autor, enlaces de contacto o navegación adicional -->
+      <i>Carmen Parrado</i>
+    </footer>
+  </body>
+  <!--
+El uso adecuado de las etiquetas en HTML es fundamental para mejorar la estructura y comprensión del contenido de una página web.
+Las etiquetas de encabezado (<h1>, <h2>, <h3>, etc.) proporcionan una jerarquía clara y ayudan tanto a los usuarios como a los motores de búsqueda a entender la estructura del contenido.
+Las etiquetas de párrafo (<p>) permiten separar el texto en bloques de contenido que son fácilmente legibles, lo que mejora la experiencia del usuario y hace que el contenido sea más organizado.
+Las Listas (<ul>, <ol>, <li>) son útiles para organizar información en puntos o pasos, haciendo el contenido más claro y fácil de seguir.
+Las etiquetas semánticas (<header>, <footer>, <section>, <article>) mejoran la organización del contenido al hacer que cada sección sea más fácil de identificar, tanto para los desarrolladores como para los navegadores y motores de búsqueda. 
+Mejoran la accesibilidad y la SEO.
+--></html>
